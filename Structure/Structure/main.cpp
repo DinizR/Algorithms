@@ -27,7 +27,7 @@ public:
     T sub();
        
     ~Arithmetic() {
-        cout << "Destructing object..." << endl;
+        cout << "Destroying object..." << endl;
     }
 };
 

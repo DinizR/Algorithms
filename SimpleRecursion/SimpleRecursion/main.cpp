@@ -22,7 +22,7 @@ public:
     T exponent(T m, T n);
     
     ~PlayRecursion() {
-        cout << "Destructing object ..." << endl;
+        cout << "Destroying object ..." << endl;
     }
 };
 
