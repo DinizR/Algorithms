@@ -32,6 +32,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "2^2 = " << maths->pow(2,2) << endl;
     cout << "2^3 = " << maths->pow(2,3) << endl;
+    cout << "2^8 = " << maths->pow(2,8) << endl;
     
     delete maths;
     
