@@ -23,6 +23,8 @@ public:
     
     T fibonacci(T n);
     
+    T combination(T n, T r);
+    
     ~PlayRecursion() {
         cout << "Destroying object ..." << endl;
     }
@@ -68,18 +70,34 @@ T PlayRecursion<T>::fibonacci(T n) {
     return fibonacci(n-2) + fibonacci(n-1);
 }
 
+///
+/// Combination
+/// nCr = n! / r! (n-r)!
+///
+template<class T>
+T PlayRecursion<T>::combination(T n, T r) {
+    if (r > n)
+        throw std::runtime_error("Calculation failed.");
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
 
 int main(int argc, const char * argv[]) {
     PlayRecursion<int> play;
     
     //play.printDec(10);
     //play.printInc(1, 10);
-    cout << "factorial of 4 = " << play.factorial(4) << endl;
-    cout << "2 ^ 2 = " << play.exponent(2, 2) << endl;
-    cout << "fibonacci #0 = " << play.fibonacci(0) << endl;
-    cout << "fibonacci #3 = " << play.fibonacci(3) << endl;
-    cout << "fibonacci #1 = " << play.fibonacci(1) << endl;
-    cout << "fibonacci #7 = " << play.fibonacci(7) << endl;
-
+    try {
+        cout << "factorial of 4 = " << play.factorial(4) << endl;
+        cout << "2 ^ 2 = " << play.exponent(2, 2) << endl;
+        cout << "fibonacci #0 = " << play.fibonacci(0) << endl;
+        cout << "fibonacci #3 = " << play.fibonacci(3) << endl;
+        cout << "fibonacci #1 = " << play.fibonacci(1) << endl;
+        cout << "fibonacci #7 = " << play.fibonacci(7) << endl;
+        cout << "combination 3,2 = " << play.combination(3,2) << endl;
+        cout << "combination 5,3 = " << play.combination(5,3) << endl;
+        cout << "combination 1,2 = " << play.combination(1,2) << endl;
+    } catch (const std::runtime_error& e) {
+        cout << e.what() << endl;
+    }
     return 0;
 }
