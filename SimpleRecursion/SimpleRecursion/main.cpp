@@ -21,6 +21,8 @@ public:
     
     T exponent(T m, T n);
     
+    T fibonacci(T n);
+    
     ~PlayRecursion() {
         cout << "Destroying object ..." << endl;
     }
@@ -59,6 +61,14 @@ T PlayRecursion<T>::factorial(T n) {
     }
 }
 
+template<class T>
+T PlayRecursion<T>::fibonacci(T n) {
+    if (n <= 1)
+        return n;
+    return fibonacci(n-2) + fibonacci(n-1);
+}
+
+
 int main(int argc, const char * argv[]) {
     PlayRecursion<int> play;
     
@@ -66,6 +76,10 @@ int main(int argc, const char * argv[]) {
     //play.printInc(1, 10);
     cout << "factorial of 4 = " << play.factorial(4) << endl;
     cout << "2 ^ 2 = " << play.exponent(2, 2) << endl;
-    
+    cout << "fibonacci #0 = " << play.fibonacci(0) << endl;
+    cout << "fibonacci #3 = " << play.fibonacci(3) << endl;
+    cout << "fibonacci #1 = " << play.fibonacci(1) << endl;
+    cout << "fibonacci #7 = " << play.fibonacci(7) << endl;
+
     return 0;
 }
