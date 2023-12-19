@@ -32,6 +32,4 @@ public:
     int getCapacity();
 };
 
-#include "ArrayList_Impl.h"
-
 #endif /* ArrayList_h */

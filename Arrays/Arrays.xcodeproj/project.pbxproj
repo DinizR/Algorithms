@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5BB88C7D2B2079040012C1B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB88C7C2B2079040012C1B8 /* main.cpp */; };
-		5BDBE5612B2D90300011FB24 /* ArrayList_Impl.h in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE5602B2D90300011FB24 /* ArrayList_Impl.h */; };
+		5BDBE5642B3191BE0011FB24 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE5632B3191BE0011FB24 /* ArrayList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 		5BB88C792B2079040012C1B8 /* Arrays */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Arrays; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB88C7C2B2079040012C1B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5BDBE55F2B2D8EAA0011FB24 /* ArrayList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayList.h; sourceTree = "<group>"; };
-		5BDBE5602B2D90300011FB24 /* ArrayList_Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayList_Impl.h; sourceTree = "<group>"; };
+		5BDBE5632B3191BE0011FB24 /* ArrayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 		5BB88C7B2B2079040012C1B8 /* Arrays */ = {
 			isa = PBXGroup;
 			children = (
+				5BDBE5632B3191BE0011FB24 /* ArrayList.cpp */,
 				5BB88C7C2B2079040012C1B8 /* main.cpp */,
 				5BDBE55F2B2D8EAA0011FB24 /* ArrayList.h */,
-				5BDBE5602B2D90300011FB24 /* ArrayList_Impl.h */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					5BB88C782B2079040012C1B8 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BB88C7D2B2079040012C1B8 /* main.cpp in Sources */,
-				5BDBE5612B2D90300011FB24 /* ArrayList_Impl.h in Sources */,
+				5BDBE5642B3191BE0011FB24 /* ArrayList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +166,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -227,6 +228,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -251,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -259,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

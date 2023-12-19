@@ -11,7 +11,6 @@
 #ifndef ArrayList_impl_h
 #define ArrayList_impl_h
 
-
 using namespace std;
 
 // Implementations
