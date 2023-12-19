@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B5AA15B2B04DB6D00A753BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AA15A2B04DB6D00A753BA /* main.cpp */; };
+		5BDBE5672B319C3C0011FB24 /* recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBE5662B319C3C0011FB24 /* recursion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 		5B5AA1572B04DB6D00A753BA /* TypesOfRecursion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TypesOfRecursion; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5AA15A2B04DB6D00A753BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5B5AA1612B04DC5900A753BA /* recursion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = recursion.h; sourceTree = "<group>"; };
+		5BDBE5662B319C3C0011FB24 /* recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recursion.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5AA15A2B04DB6D00A753BA /* main.cpp */,
+				5BDBE5662B319C3C0011FB24 /* recursion.cpp */,
 			);
 			path = TypesOfRecursion;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDBE5672B319C3C0011FB24 /* recursion.cpp in Sources */,
 				5B5AA15B2B04DB6D00A753BA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
