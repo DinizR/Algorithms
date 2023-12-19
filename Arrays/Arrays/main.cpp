@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "ArrayList.h"
+#include "ArrayList.cpp"
 
 using namespace std;
 
@@ -50,6 +51,8 @@ int main(int argc, const char * argv[]) {
 
     cout << "size = " << play->getSize() << " capacity = " << play->getCapacity() << endl;
 
+    delete play;
+    
     return 0;
 }
 
