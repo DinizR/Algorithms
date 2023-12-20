@@ -33,28 +33,12 @@ public:
     ~HeadRecursion();
 };
 
-/**
- ** Tree recursion is a recursion type where the recursive function callled more
- ** than one time (it is a non-linear recursion).
- **/
 template <class T>
 class TreeRecursion {
 public:
     TreeRecursion();
     void tree(T n);
     ~TreeRecursion();
-};
-
-template <class T>
-class IndirectRecursion {
-public:
-    
-};
-
-template <class T>
-class NestedRecursion {
-public:
-    
 };
 
 #endif /* recursion_h */
