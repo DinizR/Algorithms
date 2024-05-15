@@ -1,3 +1,3 @@
 # Algorithms
-Algorithms Studies and Remembering
+Algorithms Studies and Rememberings
 #Algorithms
